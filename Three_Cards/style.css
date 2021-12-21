@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Mentor/Three_Cards/images/bg-bottom.svg), url(/Mentor/Three_Cards/images/bg-top.svg);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+    background-color: hsl(240, 78%, 98%);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    font-size: 15px;
+}
+
+#type-pack-area {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    gap: 30px;
+}
+
+#content {
+    color: hsl(233, 13%, 49%);
+    font-size: 30px;
+}
+
+#option-pack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(234, 14%, 74%);
+    font-weight: bold;
+    width: 220px;
+}
+
+#area-button {
+    background: linear-gradient(90deg, hsl(236, 72%, 79%) 10%, hsl(237, 63%, 64%));
+    width: 50px;
+    height: 25px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#button {
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.month {
+    left: 54%;
+    top: 10%;
+}
+
+.year {
+    left: 5%;
+    top: 10%;
+}
+
+#cards-content {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    position: relative;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card:nth-child(1) {
+    left: 10px;
+}
+
+.card:nth-child(3) {
+    left: -10px;
+}
+
+#card-center {
+    height: 440px;
+    z-index: 1;
+    top: -20px;
+    padding-top: 45px;
+}
+
+.info-pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+h3 {
+    color: hsl(233, 13%, 49%);
+}
+
+h1 {
+    display: flex;
+    font-size: 48px;
+    align-items: center;
+    gap: 5px;
+    width: 90%;
+    justify-content: center;
+    color: hsl(232, 13%, 33%);
+}
+
+
+h1 span {
+    font-size: 30px;
+}
+
+.services-pack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.services-pack span {
+    height: 50px;
+    border-top: 1px solid hsl(232, 13%, 33%, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    color: hsl(233, 13%, 49%);
+}
+
+.services-pack span:nth-child(3) {
+    border-bottom: 1px solid hsla(232, 13%, 33%, 0.2);
+}
+
+.divbutton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px solid white;
+    background: linear-gradient(45deg, hsl(236, 72%, 79%) 30%, hsl(237, 63%, 64%));
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+#card-center {
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+}
+
+#card-center h1, #card-center h3 {
+    color: white;
+}
+#card-center button {
+    background: white;
+    color: hsl(237, 63%, 64%);
+}
+
+#card-center .services-pack span {
+    border-top: 1px solid hsl(240, 78%, 98%, .4);
+    ;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#card-center .services-pack span:nth-child(3) {
+    border-bottom: 1px solid hsl(240, 78%, 98%, .4);
+    ;
+}
+
+button:hover {
+    cursor: pointer;
+    background: transparent;
+    border-left: 1px solid hsl(236, 72%, 79%);
+    border-right: 1px solid hsl(236, 72%, 79%);
+    border-top: 1px solid hsl(237, 63%, 64%);
+    border-bottom: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+
+#card-center button:hover {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+@media (max-width:960px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin: 50px 0;
+        background-image: url(/Mentor/Three_Cards/images/bg-top.svg);
+        background-position: 130% -5%;
+
+    }
+
+    #cards-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .card {
+        position: static;
+    }
+
+    #card-center {
+        height: 400px;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        background-size: 320px;
+    }
+}
