@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(/Mentor/Three_Cards/images/bg-bottom.svg), url(/Mentor/Three_Cards/images/bg-top.svg);
+    background-image: url(/Three_Cards/images/bg-bottom.svg), url(/Three_Cards/images/bg-top.svg);
     background-position: left bottom, right top;
     background-repeat: no-repeat;
     background-color: hsl(240, 78%, 98%);
@@ -214,7 +214,7 @@ button:hover {
         flex-direction: column;
         height: max-content;
         margin: 50px 0;
-        background-image: url(/Mentor/Three_Cards/images/bg-top.svg);
+        background-image: url(/Three_Cards/images/bg-top.svg);
         background-position: 130% -5%;
 
     }
